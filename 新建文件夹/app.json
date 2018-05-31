@@ -1,0 +1,32 @@
+
+{
+  "pages":[
+    "pages/index/index",
+    "pages/gifmake/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "color": "#101010",
+      "selectedColor": "#5AA459",
+      "list": [
+        {
+          "selectedIconPath": "icon/shouye_green.png",
+          "iconPath": "icon/shouye.png",
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "selectedIconPath": "icon/shoucang_green.png",
+          "iconPath": "icon/shoucang.png",
+          "pagePath": "pages/index/index",
+          "text": "收藏"
+        }
+      ]
+    }
+
+}

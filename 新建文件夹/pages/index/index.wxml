@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="image_box">
+    <view class='top_image'><image style="width:100%;height:110px;border-radius:5px;" src="../image/top_image.png" mode='scaleToFill'></image></view>
+    <view class="image_show" wx:for="{{array}}" wx:for-index="idx" wx:for-item="item">
+        <image style='width:100%;height:150px;border-radius: 5%;' mode= 'aspectFill' src="{{item.src}}"></image>
+        <view class='title'>就只是尝试一下</view>
+    </view>
+    <view class="image_show" wx:for="{{packetDatas}}" wx:key="packetDatas" wx:for-item="item" wx:for-index="itemIdx">
+        <view data-idx='{{itemIdx}}' bindtap='bindCellViewTap'>
+        <image style='width:100%;height:150px;border-radius: 5%;' mode= 'aspectFill' src="{{item.thumbnail}}"></image>
+        <view class="title">{{item.name}}</view>
+        </view>
+        
+    </view>
+  </view>
+</view>
