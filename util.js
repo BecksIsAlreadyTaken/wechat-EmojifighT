@@ -7,4 +7,4 @@ exports.sha1 = function (str) {
     return str;
 }
 
-exports.SERVER = 'https://www.moodiary.com:3000/';
+exports.SERVER = 'https://www.moodiary.top/';

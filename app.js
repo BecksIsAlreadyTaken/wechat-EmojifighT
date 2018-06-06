@@ -1,12 +1,21 @@
+"use strict";
 var gif = require('./gifmaker');
 var util = require('./util');
 var reload = require('auto-reload');;
-var config = reload('./data/category');
-var templates = reload('./data/template');
+//var http = require('http');
+var https = require('https');
+var config = require('./data/category');
+var templates = require('./data/template');
 var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
+var iconv = require('iconv-lite');
 var app = express();
+
+var options = {
+	key: fs.readFileSync('../1529533825744.key'),
+	cert: fs.readFileSync('../1529533825744.pem')
+};
 
 app.use(express.static('public'));
 //app.use(bodyParser());
@@ -23,63 +32,49 @@ app.all('*', function(req, res, next) {
 });
 
 app.get('/', function (req, res) {
-    res.send('Hello World_1.6.1 success >.< GET');
+    res.send('GET success.');
 });
 
 app.post('/', function (req, res) {
-    res.send('Hello World_1.6.1 success >.< POST');
+    res.send('POST success.');
 });
 
 app.get('/gif/category', function (req, res) {
     res.json({
-        m: 0,
-        d: config.CATEGRORY,
-        e: ''
+        category: config.CATEGRORY
     });
 });
 
 app.post('/gif/make', function (req, res) {
-    var tplid = req.body.tplid;
+    var templateId = req.body.templateId;
     var content = req.body.content;
     console.log("content\n"+content);
-    var filename = 'cache/' + tplid + '_' + util.sha1(content) + '.gif';
+    var filename = 'cache/' + templateId + '_' + util.sha1(content) + '.gif';
     fs.exists('public/' + filename, function (exists) {
         if (exists) {
             res.json({
-                m: 0,
-                d: {
-                    gifurl: util.SERVER + filename
-                },
-                e: ''
+            	gifurl: util.SERVER + filename
             });
         }
         else {
-            var templObj = templates.templates[parseInt(tplid) - 1];
+            var templateObj = templates.templates[parseInt(templateId) - 1];
+		console.log(templateObj);
             var sentences = content.split('##$@?$?@$##');
             console.log(sentences);
-            templObj.template.forEach(function (element, index) {
-                element.options.text = sentences[index];
+            templateObj.template.forEach(function (item, index) {
+                item.options.text = sentences[index];
             });
 
-            gif.makewithfilters('../data/template/' + templObj.hash + '.mp4', templObj.template)
+            gif.makeWithFilters('../data/template/' + templateObj.hash + '.mp4', templateObj.template)
                 .size('75%')
                 .save('public/' + filename)
                 .on('end', function () {
                     res.json({
-                        m: 0,
-                        d: {
-                            gifurl: util.SERVER + filename
-                        },
-                        e: ''
+                    	gifurl: util.SERVER + filename
                     });
                 });
         }
     });
 });
-
-var server = app.listen(9091, function () {
-    var host = server.address().address;
-    var port = server.address().port;
-
-    console.log('Example app listening at http://%s:%s', host, port);
-});
+//http.createServer(app).listen(8080);
+https.createServer(options,app).listen(443);

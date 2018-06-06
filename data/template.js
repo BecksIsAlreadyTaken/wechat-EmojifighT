@@ -12,7 +12,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,1.18,1.56)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -24,7 +24,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,3.18,4.43)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -36,7 +36,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,5.31,7.43)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -48,7 +48,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,7.56,9.93)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -60,7 +60,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,10.06,11.56)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -72,7 +72,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,11.93,13.06)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -84,7 +84,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,13.81,16.31)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -96,7 +96,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,18.06,19.56)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -108,7 +108,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,19.59,21.60)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -129,7 +129,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,0,1.04)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -141,7 +141,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,1.46,2.90)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -153,7 +153,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,3.09,4.33)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -165,7 +165,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,4.59,5.93)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -186,7 +186,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,0,1.80)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -198,7 +198,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,1.88,3.76)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -210,7 +210,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,3.81,4.66)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -222,7 +222,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,4.66,5.90)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -234,7 +234,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,6.02,8.42)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -246,7 +246,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,8.42,10.75)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -267,7 +267,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,0.81,1.81)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -279,7 +279,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,2.31,5.42)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -300,7 +300,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,0,2.56)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -312,7 +312,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,2.56,4.31)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -324,7 +324,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,2.56,5.56)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -336,7 +336,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,5.56,8.68)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -348,7 +348,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,9.81,11.93)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
@@ -360,7 +360,7 @@ exports.templates = [
                     "x": "(w-text_w)/2",
                     "y": "h-text_h-4",
                     "enable": "between(t,12.06,14.68)",
-                    'fontfile': 'msyhbd.ttc',
+                    'fontfile': './data/fonts/msyhbd.ttc',
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
