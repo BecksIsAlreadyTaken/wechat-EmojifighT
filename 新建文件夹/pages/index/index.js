@@ -44,6 +44,7 @@ Page({
     var that = this;
     wx.request({
       url: 'https://gifmaker.develophelper.com/gif/category',
+      //url: 'http://www.moodiary.top:8080/gif/category',
       method: "GET",
       success: function (res) {
         if (res == null ||
@@ -88,10 +89,12 @@ Page({
    */
   bindCellViewTap(temp) {
     var index = temp.currentTarget.dataset.idx;
-    console.log(temp.currentTarget.dataset.idx);
+
+    //利用这个globalData全局变量来传值给make/index
     app.globalData.gifData = this.data.packetDatas[index];
+    app.globalData.name = this.data.packetDatas[index].name;
     wx.navigateTo({
-      url: '../gifmake/index',
+      url: '../gifmake/make',
     })
   }
 })

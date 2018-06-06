@@ -1,0 +1,26 @@
+<view class='make_body'>
+  <view class='make_container'>
+    <view class='card'>
+      <view class="imagebox_make">
+        <image class='image_make' data-src='{{gifData.gifDemoUrl}}' src='{{gifData.gifDemoUrl}}' bindtap='bindGifImageTap'></image>
+      </view>
+      <view class='image_make_name'>--{{name}}</view>
+    </view>
+    <view class='make_input_box'>
+    <block wx:for="{{gifData.contents}}" wx:key="gifData.contents" wx:for-item="item" wx:for-index="itemIdx">
+      <view class="make_input_box_mini">
+      <view class='number'>{{itemIdx+1}}</view>
+        <input class="make_input" name="input" placeholder="{{item}}" data-index="{{itemIdx}}" bindinput="bindInput" />
+      </view>
+    </block>
+    </view>
+    <view class='fucking'></view>
+  </view>
+  <view class="make_btn_box">
+  <!-- <view> -->
+     <button class="make_btn" bindtap='bindMakeupBtnTap'>生成</button> 
+  <!-- </view> -->
+  </view>
+
+
+</view>
