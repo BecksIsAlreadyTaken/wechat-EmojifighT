@@ -18,12 +18,6 @@ Page({
     },
     name: '',
     newGifConetents: [],
-    qualityItems: [
-      { name: '0', value: '偏低' },
-      { name: '1', value: '标准', IsChecked: 'true' },
-      { name: '2', value: '偏高' }  
-    ],
-    quality: 1,
     gifImgsrc: '',
     gifUrl: '',
     downloadStatues: 1,
@@ -72,9 +66,9 @@ Page({
   bindMakeupBtnTap(event) {
     var that = this;
     that.makeupGif((a) => {
-      this.setData({
-        gifUrl: a.gifurl
-      })
+      // this.setData({
+      //   gifUrl: a.gifurl
+      // })
       app.globalData.thumbnail = this.data.thumbnail;
       app.globalData.viewGifUrl = a.gifurl;
       wx.navigateTo({
@@ -91,7 +85,6 @@ Page({
       data:{
         from: 1,
         tplid: this.data.gifData.gifType,
-        quality: this.data.quality,
         content: this.data.newGifContents.join('##$@?$?@$##')
       },
       header: {

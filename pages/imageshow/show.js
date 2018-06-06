@@ -10,6 +10,7 @@ Page({
   data: {
     gifUrl: '',
     imgName: '',
+    newName: '',
   },
 
   /**
@@ -23,16 +24,29 @@ Page({
         gifUrl: gifUrl,
         imgName: timestamp
     })
+    var tmpdata = [];
+    tmpdata.push({name: timestamp,gifUrl: gifUrl,thumbnail: thumbnail});
+    tmpdata.push({ name: timestamp, gifUrl: gifUrl, thumbnail: thumbnail });
     wx.setStorage({
         key: 'history',
-        data: {
-            name: timestamp,
-            gifUrl: gifUrl,
-            thumbnail: thumbnail
-        },
+        data: tmpdata,
+    })
+    wx.getStorage({
+      key: 'history',
+      success: function(res) {
+        console.log(res);
+      },
     })
   },
 
+  bindInput(event){
+      var newName = event.detail.value;
+      // compare with img name
+      // if new : update storage 
+  }
+   
+   // errormsg: delete localStorage where Name = img name
+ 
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作

@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/gifmake/make",
+    "pages/imageshow/show",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "斗一斗图",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#101010",
+    "selectedColor": "#5AA459",
+    "list": [
+      {
+        "selectedIconPath": "icon/index_green.png",
+        "iconPath": "icon/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "icon/history_green.png",
+        "iconPath": "icon/history.png",
+        "pagePath": "pages/history/history",
+        "text": "历史记录"
+      }
+    ]
+  }
+}
