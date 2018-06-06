@@ -9,6 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    thumbnail: '',
     modalHidden: true,
     gifData: {
       gifDemoUrl: '',
@@ -34,7 +35,8 @@ Page({
   onLoad: function (options) {
     var gifData = app.globalData.gifData;
     var name = app.globalData.name;
-
+    var thumbnail = gifData.thumbnail;
+    console.log(thumbnail);
     var newContents = gifData.contents.split('##$@?$?@$##');
     this.setData({
       gifData: {
@@ -43,7 +45,8 @@ Page({
         contents: newContents
       },
       name: name,
-      newGifContents: newContents
+      newGifContents: newContents,
+      thumbnail: thumbnail
     })
     
   },
@@ -72,42 +75,13 @@ Page({
       this.setData({
         gifUrl: a.gifurl
       })
-    });
-    if (that.data.downloadStatus == 0) {
-      console.log(1);
-      wx.previewImage(
-        { urls: [that.data.gifImgSrc] }
-      );
-    }
-    else {
-      console.log(2);
-      wx.showLoading({ title: '正在下载中...' });
-      wx.downloadFile({
-        url: that.data.gifUrl,
-        type: 'image',
-        success: function (res) {
-          wx.hideLoading();
-          wx.showToast({
-            title: '图片成功下载',
-            icon: 'none'
-          });
-          that.setData({
-            gifImgSrc: res.tempFilePath,
-            downStatues: 0
-          });
-          wx.previewImage({
-            urls: [that.data.gifImgSrc],
-          })
-        },
-        fail: function (res) {
-          wx.hideLoading();
-          wx.showToast({
-            title: '生成失败，请稍后重试',
-            icon: 'none'
-          })
-        }
+      app.globalData.thumbnail = this.data.thumbnail;
+      app.globalData.viewGifUrl = a.gifurl;
+      wx.navigateTo({
+          url: '../imageshow/show',
       })
-    }
+    });
+
   },
   makeupGif(callback) {
     wx.showLoading({ title: '动图生成中...'}),
@@ -124,7 +98,7 @@ Page({
         "content-type": 'application/x-www-form-urlencoded'
       },
       success: function (res) {
-        console.log(res.data.gifurl);
+        
         wx.hideLoading();
         if (res.data.m == 0)
           callback(res.data.d);

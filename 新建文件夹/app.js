@@ -35,6 +35,8 @@ App({
   },
   globalData: {
     gifData: null,
-    name: null
+    name: null,
+    viewGifUrl: null,
+    thumbnail: null,
   }
 })

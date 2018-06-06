@@ -1,0 +1,13 @@
+<view class='show_body'>
+    <view class='show_container'>
+        <view class='card'>
+            <view class="imagebox_show">
+                <image class='image_show' data-src='{{gifUrl}}' src='{{gifUrl}}' bindtap='img_btn'></image>
+            </view>
+        </view>
+      <view class="show_input_box_mini">
+      <view class='number'>动图名:</view>
+        <input class="show_input" name="input" placeholder="{{imgName}}" data-index="{{itemIdx}}" bindinput="bindInput" />
+      </view>
+    </view>
+</view>

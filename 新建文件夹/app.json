@@ -2,7 +2,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/gifmake/make"
+    "pages/gifmake/make",
+    "pages/imageshow/show"
   ],
   "window":{
     "backgroundTextStyle":"light",
