@@ -1,2 +1,9 @@
 <!--pages/history/history.wxml-->
-<text>pages/history/history.wxml</text>
+<view class='container'>
+  <scroll-view scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view style="background:red;width: 200px; height: 300px"></view>
+    <view style="background:green;width: 200px; height: 300px"></view>
+    <view style="background:blue;width: 200px; height: 300px"></view>
+    <view style="background:yellow;width: 200px; height: 300px"></view>
+  </scroll-view>
+</view>

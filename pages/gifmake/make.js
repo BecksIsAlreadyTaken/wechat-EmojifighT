@@ -2,7 +2,7 @@
  * 获取这个小程序的实例
  */
 var app = getApp();
-
+var util = require("../../utils/util.js");
 Page({
 
   /**
@@ -71,6 +71,23 @@ Page({
       // })
       app.globalData.thumbnail = this.data.thumbnail;
       app.globalData.viewGifUrl = a.gifurl;
+      var timestamp = util.formatTime(new Date);
+      app.globalData.name = timestamp;
+      wx.getStorage({
+        key: 'history',
+        success: function(res) {
+          var newData = res.data;
+          newData.push({
+            name: app.globalData.name,
+            gifUrl: app.globalData.viewGifUrl,
+            thumbnail: app.globalData.thumbnail
+          });
+          wx.setStorage({
+            key: 'history',
+            data: newData,
+          });
+        },
+      });
       wx.navigateTo({
           url: '../imageshow/show',
       })

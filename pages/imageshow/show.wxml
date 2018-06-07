@@ -9,5 +9,6 @@
       <view class='number'>动图名:</view>
         <input class="show_input" name="input" placeholder="{{imgName}}" data-index="{{itemIdx}}" bindinput="bindInput" />
       </view>
+      <button class="modify_btn" bindtap='bindModifyBtnTap'>修改</button> 
     </view>
 </view>
