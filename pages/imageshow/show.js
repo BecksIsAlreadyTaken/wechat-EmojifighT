@@ -24,12 +24,6 @@ Page({
         gifUrl: gifUrl,
         imgName: name
     });
-    wx.getStorage({
-      key: 'history',
-      success: function(res) {
-        console.log(res);
-      },
-    });
   },
 
   bindInput(event){
@@ -39,7 +33,11 @@ Page({
       });
   },
    
-   // errormsg: delete localStorage where Name = img name
+  errmsg(event){
+    // 提示资源不存在 进行localStorage的删除操作 以及globalData的清空操作
+    // 弹出带有确定按钮的窗口
+    // 点击确定后跳转至历史记录页面
+  },
  
   bindModifyBtnTap(event){
     console.log(this.data);

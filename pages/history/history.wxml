@@ -1,9 +1,7 @@
 <!--pages/history/history.wxml-->
 <view class='container'>
-  <scroll-view scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view style="background:red;width: 200px; height: 300px"></view>
-    <view style="background:green;width: 200px; height: 300px"></view>
-    <view style="background:blue;width: 200px; height: 300px"></view>
-    <view style="background:yellow;width: 200px; height: 300px"></view>
-  </scroll-view>
+  <view class="history" wx:for="{{list}}" wx:for-index="idx" wx:for-item="item">
+        <image style='width:100%;height:150px;border-radius: 5%;' mode= 'aspectFill' src="{{item.thumbnail}}"></image>
+        <view class='title'>{{item.name}}</view>
+  </view>
 </view>
