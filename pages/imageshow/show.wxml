@@ -2,7 +2,7 @@
     <view class='show_container'>
         <view class='card'>
             <view class="imagebox_show">
-                <image class='image_show' data-src='{{gifUrl}}' src='{{gifUrl}}' bindtap='img_btn' binderror='errmsg'></image>
+                <image class='image_show' data-src='{{gifUrl}}' src='{{gifUrl}}' bindtap='bindGifImageTap' binderror='errmsg'></image>
             </view>
         </view>
       <view class="show_input_box_mini">

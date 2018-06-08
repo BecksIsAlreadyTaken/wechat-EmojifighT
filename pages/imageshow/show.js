@@ -34,9 +34,35 @@ Page({
   },
    
   errmsg(event){
-    // 提示资源不存在 进行localStorage的删除操作 以及globalData的清空操作
-    // 弹出带有确定按钮的窗口
-    // 点击确定后跳转至历史记录页面
+    wx.getStorage({
+      key: 'history',
+      success: function(res) {
+        var items = new Array();
+        items = res.data;
+        var target = {
+          name: app.globalData.name,
+          gifUrl: app.globalData.viewGifUrl,
+          thumbnail: app.globalData.thumbnail
+        };
+        let i = 0;
+        for(;i<items.length;i++){
+          if(items[i].gifUrl == target.gifUrl)
+            break;
+        }
+        items.splice(i,1);
+        wx.setStorage({
+          key: 'history',
+          data: items,
+        });
+        app.globalData.viewGifUrl = null;
+        app.globalData.name = null;
+        app.globalData.thumbnail = null;
+      },
+    });
+    // TODO: 弹出资源不存在 点击确定后返回
+    wx.navigateBack({
+      url: '../history/history'
+    });
   },
  
   bindModifyBtnTap(event){
@@ -51,7 +77,8 @@ Page({
       wx.getStorage({
         key: 'history',
         success: function(res) {
-          var items = res.data;
+          var items = new Array();
+          items = res.data;
           items.forEach(function(item){
             if(item.name === oldName && item.gifUrl === url){
               item.name = newName;
@@ -65,7 +92,18 @@ Page({
         },
       });
     }
+    // TODO: 弹出修改成功
   },
+
+  /**
+   * 点击图片，显示图片
+   */
+  bindGifImageTap(event) {
+    wx.previewImage(
+      { urls: [event.currentTarget.dataset.src] }
+    )
+  },
+
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */

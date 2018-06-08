@@ -43,14 +43,7 @@ Page({
     })
     
   },
-  /**
-   * 点击图片，显示图片
-   */
-  bindGifImageTap(event) {
-    wx.previewImage(
-      { urls: [event.currentTarget.dataset.src] }
-    )
-  },
+  
   /**
    * 输入文本
    */
@@ -59,15 +52,13 @@ Page({
     var index = event.currentTarget.dataset.index;
     this.data.newGifContents[index] = detail;
   },
+
   /**
    * 点击生成按钮，跳转到“图片显示”页面
    */
   bindMakeupBtnTap(event) {
     var that = this;
     that.makeupGif((a) => {
-      // this.setData({
-      //   gifUrl: a.gifurl
-      // })
       app.globalData.thumbnail = this.data.thumbnail;
       app.globalData.viewGifUrl = a.gifurl;
       var timestamp = util.formatTime(new Date);
@@ -75,7 +66,8 @@ Page({
       wx.getStorage({
         key: 'history',
         success: function(res) {
-          var newData = res.data;
+          var newData = new Array();
+          newData = res.data;
           newData.push({
             name: app.globalData.name,
             gifUrl: app.globalData.viewGifUrl,

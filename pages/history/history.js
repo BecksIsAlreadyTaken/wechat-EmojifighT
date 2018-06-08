@@ -19,18 +19,17 @@ Page({
     wx.getStorage({
       key: 'history',
       success: function(res) {
-        var list = res.data;
+        var list = new Array();
+        list = res.data;
         that.setData({
           list: list  
         });
       },
     });
-    console.log(this.data.list);
   },
 
   bindViewTap(event){
     var item = event.currentTarget.dataset.item;
-    console.log(item);
     app.globalData.thumbnail = item.thumbnail;
     app.globalData.viewGifUrl = item.gifUrl;
     app.globalData.name = item.name;
