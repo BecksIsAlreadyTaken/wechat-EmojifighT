@@ -1,1 +1,16 @@
 /* pages/history/history.wxss */
+.image{
+    width:20%;
+    margin-right: 10px;
+}
+.item_box{
+    display: flex;
+    margin: 10px 10px;
+}
+
+.title{
+    width: 80%;
+    margin-top:18px;
+    font-size: 16px;
+    border-bottom: #ebebeb 1px solid; 
+}

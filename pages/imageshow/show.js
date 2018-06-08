@@ -59,15 +59,22 @@ Page({
         app.globalData.thumbnail = null;
       },
     });
-    // TODO: 弹出资源不存在 点击确定后返回
+    // 弹出资源不存在 点击确定后返回
+    wx.showToast({
+        title: '资源已不存在',
+        icon: null,
+        duration: 700,
+        mask: true
+    })
+
     wx.navigateBack({
       url: '../history/history'
     });
   },
  
   bindModifyBtnTap(event){
-    if(this.data.newName==''||this.data.newName === this.data.imgName) {
-      this.setData({newName:''});
+    if(this.data.newName == ''||this.data.newName === this.data.imgName) {
+      this.setData({newName: ''});
       return;
     }
     else {
@@ -92,7 +99,13 @@ Page({
         },
       });
     }
-    // TODO: 弹出修改成功
+    // 弹出修改成功
+    wx.showToast({
+        title: '修改成功',
+        icon: 'null',
+        duration: 700,
+        mask: true
+    })
   },
 
   /**
@@ -102,26 +115,5 @@ Page({
     wx.previewImage(
       { urls: [event.currentTarget.dataset.src] }
     )
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
   }
 })
