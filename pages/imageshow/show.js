@@ -60,16 +60,19 @@ Page({
       },
     });
     // 弹出资源不存在 点击确定后返回
-    wx.showToast({
-        title: '资源已不存在',
-        icon: null,
-        duration: 700,
-        mask: true
-    })
-
-    wx.navigateBack({
-      url: '../history/history'
+    wx.showModal({
+      title: '提示',
+      content: '资源已不存在',
+      showCancel: false,
+      success: function(res){
+        if(res.confirm) {
+          wx.navigateBack({
+            url: '../history/history'
+          });
+        }
+      }
     });
+    
   },
  
   bindModifyBtnTap(event){

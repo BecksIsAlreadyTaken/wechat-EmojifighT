@@ -20,8 +20,8 @@ Page({
   loadData(targetPage, callback) {
     var that = this;
     wx.request({
-      url: 'https://gifmaker.develophelper.com/gif/category',
-      //url: 'http://www.moodiary.top:8080/gif/category',
+      //url: 'https://gifmaker.develophelper.com/gif/category',
+      url: 'https://www.moodiary.top/gif/category',
       method: "GET",
       success: function (res) {
         if (res == null ||

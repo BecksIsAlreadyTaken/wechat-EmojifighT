@@ -28,6 +28,10 @@ Page({
     });
   },
 
+  onShow: function(event){
+    this.onLoad();
+  },
+  
   bindViewTap(event){
     var item = event.currentTarget.dataset.item;
     app.globalData.thumbnail = item.thumbnail;
