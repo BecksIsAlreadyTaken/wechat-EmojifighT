@@ -1,8 +1,10 @@
 <!--index.wxml-->
 <view class="container">
   <view class="image_box">
-    <view class='top_image'><image style="width:100%;height:110px;border-radius:5px;" src="../image/top_image.png" mode='scaleToFill'></image></view>
-    <view class="image_show" wx:for="{{array}}" wx:for-index="idx" wx:for-item="item">
+    <view class='top_image'>
+      <image style="width:100%;height:110px;border-radius:5px;" src="../image/top_image.png" mode='scaleToFill'></image>
+    </view>
+    <view class="image_show" wx:for="{{array}}" wx:key="array" wx:for-index="idx" wx:for-item="item">
         <image style='width:100%;height:150px;border-radius: 5%;' mode= 'aspectFill' src="{{item.src}}"></image>
         <view class='title'>就只是尝试一下</view>
     </view>

@@ -25,6 +25,18 @@ Page({
         });
       },
     });
+    console.log(this.data.list);
+  },
+
+  bindViewTap(event){
+    var item = event.currentTarget.dataset.item;
+    console.log(item);
+    app.globalData.thumbnail = item.thumbnail;
+    app.globalData.viewGifUrl = item.gifUrl;
+    app.globalData.name = item.name;
+    wx.navigateTo({
+      url: '../imageshow/show',
+    });
   },
 
   /**
@@ -38,7 +50,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.onLoad();
   },
 
   /**

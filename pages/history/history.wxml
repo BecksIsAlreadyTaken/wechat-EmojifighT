@@ -1,7 +1,9 @@
 <!--pages/history/history.wxml-->
 <view class='container'>
-  <view class="history" wx:for="{{list}}" wx:for-index="idx" wx:for-item="item">
-        <image style='width:100%;height:150px;border-radius: 5%;' mode= 'aspectFill' src="{{item.thumbnail}}"></image>
-        <view class='title'>{{item.name}}</view>
+  <view class="history" wx:for="{{list}}" wx:key="list" wx:for-index="idx" wx:for-item="item">
+        <view data-item='{{item}}' bindtap='bindViewTap'>
+          <image style='width:100%;height:150px;border-radius: 5%;' mode= 'aspectFill' src="{{item.thumbnail}}"></image>
+          <view class='title'>{{item.name}}</view>
+        </view>
   </view>
 </view>

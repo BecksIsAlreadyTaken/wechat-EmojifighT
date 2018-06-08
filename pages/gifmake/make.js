@@ -30,7 +30,6 @@ Page({
     var gifData = app.globalData.gifData;
     var name = app.globalData.name;
     var thumbnail = gifData.thumbnail;
-    console.log(thumbnail);
     var newContents = gifData.contents.split('##$@?$?@$##');
     this.setData({
       gifData: {
@@ -90,7 +89,7 @@ Page({
       });
       wx.navigateTo({
           url: '../imageshow/show',
-      })
+      });
     });
 
   },

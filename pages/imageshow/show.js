@@ -24,7 +24,6 @@ Page({
         gifUrl: gifUrl,
         imgName: name
     });
-    console.log(this.data);
   },
 
   bindInput(event){
@@ -41,7 +40,6 @@ Page({
   },
  
   bindModifyBtnTap(event){
-    console.log(this.data);
     if(this.data.newName==''||this.data.newName === this.data.imgName) {
       this.setData({newName:''});
       return;
@@ -65,10 +63,6 @@ Page({
             data: items,
           });
         },
-      });
-      console.log(app.globalData);
-      wx.navigateTo({
-        url: '../imageshow/show',
       });
     }
   },
