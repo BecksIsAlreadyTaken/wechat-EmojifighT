@@ -598,7 +598,76 @@ exports.templates = [
                     'fontcolor': 'white',
                     "fontsize": "14"
                 }
+            }
+        ]
+    },
+ 
+    //暗杀教室
+    {
+        id: 8,
+        name: "大人有大人的护理方式",
+        hash: "c6fa227e9038816ccf1d271dea4bc4a1f8154580",
+        template: [
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "不仅如此竟还",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,1.05,1.98)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
             },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "用触手做了那种事...(//▽//)",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,2.22,3.40)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "哪种事啊=-=",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,3.70,4.7)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "老师你干了什么→_→",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,5.01,6.88)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "这个嘛..大人有大人的护理方式",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,7.77,10.98)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            }
         ]
     }
 ]

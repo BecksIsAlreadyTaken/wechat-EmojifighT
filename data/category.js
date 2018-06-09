@@ -54,6 +54,14 @@ Items = [
         "gifType": 7,
         "name": "打你没商量（来源：电影《功夫》）",
         "thumbnail": "https://www.moodiary.top/demo/thumbnail/7.png"
+    },
+    {
+        "templateId": 8,
+        "contents": "不仅如此竟还##$@?$?@$##用触手做了那种事...(//▽//)##$@?$?@$##哪种事啊=-=##$@?$?@$##老师你干了什么→_→##$@?$?@$##这个嘛..大人有大人的护理方式",
+        "gifDemoUrl": "https://www.moodiary.top/demo/gif/8.gif",
+        "gifType": 8,
+        "name": "大人有大人的护理方式（来源：3年E班）",
+        "thumbnail": "https://www.moodiary.top/demo/thumbnail/8.png"
     }
 ];
 
