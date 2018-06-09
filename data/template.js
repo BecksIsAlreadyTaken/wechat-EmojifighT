@@ -404,7 +404,7 @@ exports.templates = [
                         "text": "不过要先经过选拔",
                         "x": "(w-text_w)/2",
                         "y": "h-text_h-4",
-                        "enable": "between(t,5,5.5)",
+                        "enable": "between(t,5,5.75)",
                         'fontfile': './data/fonts/msyhbd.ttc',
                         'fontcolor': 'white',
                         "fontsize": "14"
@@ -428,7 +428,7 @@ exports.templates = [
                         "text": "绝对不会接受垃圾",
                         "x": "(w-text_w)/2",
                         "y": "h-text_h-4",
-                        "enable": "between(t,8,10)",
+                        "enable": "between(t,8,10.3)",
                         'fontfile': './data/fonts/msyhbd.ttc',
                         'fontcolor': 'white',
                         "fontsize": "14"
@@ -465,18 +465,6 @@ exports.templates = [
                         "x": "(w-text_w)/2",
                         "y": "h-text_h-4",
                         "enable": "between(t,14.75,16.5)",
-                        'fontfile': './data/fonts/msyhbd.ttc',
-                        'fontcolor': 'white',
-                        "fontsize": "14"
-                    }
-            },
-            {
-                filter: "drawtext",
-                    options: {
-                        "text": "(╯‵□′)╯︵┻━┻",
-                        "x": "(w-text_w)/2",
-                        "y": "h-text_h-4",
-                        "enable": "between(t,16.75,17)",
                         'fontfile': './data/fonts/msyhbd.ttc',
                         'fontcolor': 'white',
                         "fontsize": "14"
