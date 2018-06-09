@@ -41,7 +41,9 @@ app.post('/', function (req, res) {
 
 app.get('/gif/category', function (req, res) {
     res.json({
-        category: config.CATEGRORY
+	m: 0,
+	d: config.CATEGRORY,
+	e: ''
     });
 });
 
@@ -53,8 +55,12 @@ app.post('/gif/make', function (req, res) {
     fs.exists('public/' + filename, function (exists) {
         if (exists) {
             res.json({
-            	gifurl: util.SERVER + filename
-            });
+            	m: 0,
+		d: {
+			gifurl: util.SERVER + filename
+            	},
+		e: ''
+		});
         }
         else {
             var templateObj = templates.templates[parseInt(templateId) - 1];
@@ -70,8 +76,12 @@ app.post('/gif/make', function (req, res) {
                 .save('public/' + filename)
                 .on('end', function () {
                     res.json({
-                    	gifurl: util.SERVER + filename
-                    });
+                    	m: 0,
+			d: {
+				gifurl: util.SERVER + filename
+                    	},
+			e: ''	
+			});
                 });
         }
     });
