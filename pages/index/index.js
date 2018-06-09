@@ -17,6 +17,7 @@ Page({
     var that = this;
     this.loadData(that, that.currentPage);
   },
+
   loadData(targetPage, callback) {
     var that = this;
     wx.request({
@@ -36,7 +37,7 @@ Page({
         });
 
         that.currentPage = targetPage;
-
+        wx.setStorage({ key: 'history',data: new Array() });
         if (callback) callback();
       }
     })
