@@ -41,6 +41,9 @@
   font-size: 15px;
 
 }
+.make_input {
+  width:520px;
+}
 .make_input_box{
   padding: 20rpx;
   font-size: 13px;
