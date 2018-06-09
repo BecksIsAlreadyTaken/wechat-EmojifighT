@@ -472,4 +472,133 @@ exports.templates = [
             }
         ]
     },
+    
+    // 打你没商量
+    {
+        id: 7,
+        name: "打你没商量",
+        hash: "105be7d5eb844a0e5e9d65992d02deed6551640a",
+        template: [
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "你干嘛，肥婆",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,0.6,1.1)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "打你",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,1.3,2)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "我有大哥啊",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,2.9,4.6)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "你叫他啊",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,4.56,5.5)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "大哥啊",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,5.8,7.3)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "再打我一下试试",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,9,10.2)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "打了怎么着",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,10.5,11.3)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "有本事再打十下",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,11.7,12.3)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "溜了溜了",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,12.8,14)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+            {
+                filter: "drawtext",
+                options: {
+                    "text": "我打打打",
+                    "x": "(w-text_w)/2",
+                    "y": "h-text_h-4",
+                    "enable": "between(t,14.6,16)",
+                    'fontfile': './data/fonts/msyhbd.ttc',
+                    'fontcolor': 'white',
+                    "fontsize": "14"
+                }
+            },
+        ]
+    }
 ]

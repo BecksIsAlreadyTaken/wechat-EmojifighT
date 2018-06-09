@@ -47,7 +47,14 @@ Items = [
         "name": "我不是针对你（来源：断水流大师兄《破坏之王》）",
         "thumbnail": "https://www.moodiary.top/demo/thumbnail/6.png"
     },
-
+    {
+        "templateId": 7,
+        "contents": "你干嘛，肥婆##$@?$?@$##打你##$@?$?@$##我有大哥啊##$@?$?@$##你叫他啊##$@?$?@$##大哥啊##$@?$?@$##再打我一下试试##$@?$?@$##打了怎么着##$@?$?@$##有本事再打十下##$@?$?@$##溜了溜了##$@?$?@$##我打打打",
+        "gifDemoUrl": "https://www.moodiary.top/demo/gif/7.gif",
+        "gifType": 7,
+        "name": "打你没商量（来源：电影《功夫》）",
+        "thumbnail": "https://www.moodiary.top/demo/thumbnail/7.png"
+    }
 ];
 
 exports.CATEGRORY = Items;
