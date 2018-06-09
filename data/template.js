@@ -367,4 +367,121 @@ exports.templates = [
             }
         ]
     },
+
+    // 我不是针对你
+    {
+        id: 6,
+        name: "我不是针对你",
+        hash: "6365ad7b0b59729b8450b00b0a2bf411e01f2807",
+        template: [
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "问得好，如果各位有兴趣的话",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,1,2.5)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "可以加入我们空手道部门",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,3,4.5)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "不过要先经过选拔",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,5,5.5)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "因为我只会训练精英",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,6,7.5)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "绝对不会接受垃圾",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,8,10)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "看我干嘛？你把我当垃圾！",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,10.4,11.75)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "不是...不要误会，我不是针对你",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,12.5,14.5)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "我是说在座的各位都是垃圾",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,14.75,16.5)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            },
+            {
+                filter: "drawtext",
+                    options: {
+                        "text": "(╯‵□′)╯︵┻━┻",
+                        "x": "(w-text_w)/2",
+                        "y": "h-text_h-4",
+                        "enable": "between(t,16.75,17)",
+                        'fontfile': './data/fonts/msyhbd.ttc',
+                        'fontcolor': 'white',
+                        "fontsize": "14"
+                    }
+            }
+        ]
+    },
 ]
